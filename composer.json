@@ -1,20 +1,16 @@
 {
 
-  "name": "jsonrpc/jsonrpc",
+  "name": "sumfen/jsonrpc",
   "description": "JSON-RPC 2.0 client/server implementation",
   "keywords": ["json", "rpc", "json-rpc", "api"],
-  "homepage": "http://github.com/johnstevenson/jsonrpc",
+  "homepage": "https://github.com/qq591636119/jsonrpc",
   "type": "library",
   "license": "MIT",
   "authors": [
-    {
-      "name": "John Stevenson",
-      "email": "john-stevenson@blueyonder.co.uk"
-    }
   ],
 
   "require": {
-    "php": ">=5.3.0"
+    "php": ">=5.6.0"
   },
 
   "autoload": {

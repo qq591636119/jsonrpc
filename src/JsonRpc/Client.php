@@ -61,6 +61,8 @@ class Client
   private $notifications = 0;
   private $headers = array();
 
+  private $config = [];
+
 
   const ERR_RPC_RESPONSE = 'Invalid Response';
 
@@ -155,7 +157,7 @@ class Client
     {
       $data['id'] = ++ $this->id;
     }
-
+    if (isset($data['id']) && !empty($this->config['id_to_string'])) $data['id'] = (string) $data['id'];
     $request = new Request($data);
 
     if ($request->fault)
@@ -389,7 +391,16 @@ class Client
 
   }
 
-  private function order($a, $b)
+    /**
+     * @param array $config
+     */
+    public function setConfig($config)
+    {
+        $this->config = $config;
+        return $this;
+    }
+
+    private function order($a, $b)
   {
 
     if ($a->id == $b->id)

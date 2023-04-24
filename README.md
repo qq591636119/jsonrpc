@@ -1,4 +1,4 @@
-# Json-Rpc
+# Json-Rpc (基于 jsonrpc/jsonrpc 进行优化)
 
 [![Build Status](https://secure.travis-ci.org/johnstevenson/json-rpc.png)](http://travis-ci.org/johnstevenson/json-rpc)
 
