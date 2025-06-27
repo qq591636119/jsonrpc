@@ -1,20 +1,23 @@
 {
-
   "name": "sumfen/jsonrpc",
   "description": "JSON-RPC 2.0 client/server implementation",
-  "keywords": ["json", "rpc", "json-rpc", "api"],
+  "keywords": [
+    "json",
+    "rpc",
+    "json-rpc",
+    "api"
+  ],
   "homepage": "https://github.com/qq591636119/jsonrpc",
   "type": "library",
   "license": "MIT",
   "authors": [
   ],
-
   "require": {
     "php": ">=8.0"
   },
-
   "autoload": {
-    "psr-4": {"JsonRpc": "src/JsonRpc"}
+    "psr-4": {
+      "JsonRpc\\": "src/JsonRpc/"
+    }
   }
-
 }
